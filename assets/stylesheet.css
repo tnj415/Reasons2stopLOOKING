@@ -30,13 +30,22 @@ header a:hover {
 
 body {
     background-color: #202122;
+    
     }
 
 body p {
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: flex-end;
+    
     }
 
+    body img {
+    
+      float: right;
+      margin-right: 25%;
+
+    }
 aside {
     text-align: center;
     color: #ffffff;
@@ -56,18 +65,4 @@ aside {
     text-align: center;
     font-size: 200%;
     
-    
-}
-
-
-aside a {
-    color: #ffffff;
-    text-align: center;
-    text-decoration: none;
-    
-    border-style: solid;
-    border-color: rgb(255, 142, 37);
-    border-radius: 50px;
-    border-width: 1px;
-    padding: 5px;
 }
