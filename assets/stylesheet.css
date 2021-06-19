@@ -9,12 +9,12 @@ header {
     text-align: center;
 }
 
-h1 {
+/* h1 {
     font-size: 200%;
     margin-left: 100px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffffff;
-}
+} */
 
 header a {
 
@@ -33,23 +33,17 @@ header a:hover {
 }
 
 main {
-    margin-top: 60px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    background-color: #202122;
+
 }
 
-body {
-     /* flex-wrap: wrap;*/
-    background-color: #202122;
-    
-
-    }
-
-body p {
+/* body p {
     color: #ffffff;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    }
+    } */
 
 .portrait {
     
@@ -69,7 +63,7 @@ aside {
     background-color: #df0ebc00; */
     width: 500px;
     
-    margin-top: 10%;
+    margin-top: 20%;
     line-height: 150%;
     }
 
@@ -80,6 +74,25 @@ aside {
 .single-line {
     text-align: center;
     font-size: 200%;
+    
+}
+
+.myPortfolio-content {
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+    padding: 50px;
+    background-color: #202122;
+}
+
+.card {
+    color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+.card h2 {
+    padding-left: 10px;
     
 }
 
@@ -111,4 +124,18 @@ aside {
     .aside-content {
         border-left: none;
     }
+
+     .card p {
+        display: none;
+    }
+
+    .card:hover p {
+        display: block;
+    }
+    .card h2 {
+        text-align: center;
+    } 
+
+
+
   }
