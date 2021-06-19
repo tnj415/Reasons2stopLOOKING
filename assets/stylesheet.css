@@ -36,7 +36,7 @@ main {
     margin-top: 60px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 body {
@@ -54,7 +54,9 @@ body p {
 body img {
     
     float: right;
-    margin-right: 25%;
+    align-content: center;
+    margin-top: 10%;
+    padding-right: 25%;
 
     }
 
@@ -66,19 +68,17 @@ aside {
     /* border-right: 50px solid #df0ebc00;
     background-color: #df0ebc00; */
     width: 500px;
-    margin-left: 5%;
+    
     margin-top: 10%;
     line-height: 150%;
     }
 
-    .div aside content {
+    .aside-content {
         border-left:  2px solid #ffffff;
-        background-color: brown;
 
     }
 .single-line {
     text-align: center;
     font-size: 200%;
-    border-left:  2px solid #ffffff;
     
 }
