@@ -51,12 +51,12 @@ body p {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     }
 
-body img {
+.portrait {
     
     float: right;
     align-content: center;
     margin-top: 10%;
-    padding-right: 25%;
+    
 
     }
 
@@ -82,3 +82,23 @@ aside {
     font-size: 200%;
     
 }
+
+@media screen and (max-width: 830px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+
+    body {
+        width: 100%;
+        align-content: center;
+        margin-top: 10%;
+        justify-content: space-evenly;
+    }
+   
+
+
+    .aside-content {
+        border-left: none;
+    }
+  }
