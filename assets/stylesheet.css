@@ -26,9 +26,9 @@ header a {
 }
 
 header a:hover {
-    color: rgb(255, 142, 37);
+    color: rgb(243, 120, 20);
     text-decoration: none;
-    text-decoration-color: rgb(255, 142, 37);
+    text-decoration-color: rgb(243, 120, 20);
     border-bottom: 2px solid currentColor;   
 }
 
@@ -49,7 +49,8 @@ main {
     
     float: right;
     align-content: center;
-    margin-top: 10%;
+   
+    margin: 10%;
     
 
     }
@@ -62,12 +63,13 @@ aside {
     /* border-right: 50px solid #df0ebc00;
     background-color: #df0ebc00; */
     width: 500px;
-    
+    margin-left: 10%;
     margin-top: 20%;
     line-height: 150%;
     }
 
     .aside-content {
+        margin-right: 20%;
         border-left:  2px solid #ffffff;
 
     }
@@ -91,12 +93,12 @@ flex-wrap: wrap;
 
 }
 
-.card h2 {
+.card a {
     padding-left: 10px;
     
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 890px) {
     main,
     nav {
       flex-direction: column;
@@ -125,15 +127,30 @@ flex-wrap: wrap;
         border-left: none;
     }
 
-     .card p {
+ 
+    .card p {
         display: none;
     }
 
     .card:hover p {
         display: block;
+
     }
-    .card h2 {
+
+    .card:hover h2{
+        border-color: rgb(243, 120, 20);
+    }
+
+    .card:hover h2 {
+        color: rgb(243, 120, 20);
+    }
+     .card h2 {
         text-align: center;
+        padding: 15px;
+        border-style: solid;
+        border-width: 2px;
+        border-radius: 20px;
+        box-shadow: white;
     } 
 
 
