@@ -9,6 +9,31 @@ header {
     text-align: center;
 }
 
+.logo {
+    float:left;
+    position: relative;
+    
+}
+
+.imgBot {
+    width: 75px;
+    height: 50px;
+    margin-top: -15px;
+}
+.logo .imgTop {
+    width: 75px;
+    height: 50px;
+    margin-top: -15px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.logo:hover .imgTop {
+    display: inline;
+}
+
 /* h1 {
     font-size: 200%;
     margin-left: 100px;
@@ -17,7 +42,7 @@ header {
 } */
 
 header a {
-
+    margin-right: 50;
     text-align: center;
     text-decoration: none;
     padding: 20px;
