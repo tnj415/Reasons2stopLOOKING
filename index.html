@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="assets/stylesheet.css">
-
-    <link rel="T emblem" type="image/png" href="./assets/img/T-emb.png"/>
+    <script src="javascript.js"></script>
+    <link rel="T emblem" type="image/png" href="./assets/img/T-emb.png" />
 
 </head>
 
@@ -16,7 +16,7 @@
 
     <!-- Header -->
     <header>
-        <a href="#About-Me">About Me</a>
+        <a href="#AboutMe">About Me</a>
         <a href="#Work">Work</a>
         <a href="#Resume">Resume</a>
         <a href="#Contact">Contact</a>
@@ -27,11 +27,23 @@
 
         <!-- Side Bar -->
         <aside>
-            <div class="aside-content">
-                <p class="single-line">Troy Johnson</p>
+            <div class="asideContent">
+                <p class="singleLine">Troy Johnson</p>
                 <p>Developer Student</p>
+                <!-- Contact Button -->
+                <button id="contactButton"></button>Contact</button>
+               
+                <!-- Modal -->
+                <div id="myModal" class="modal">
+                    <div class="modalContent">
+                        <span class="close">&times;</span>
+                        
+                        <!-- Contact-->
+                     <p>some text</p>
+                     <p>and some more text here</p>
+                    </div>
+                </div>
             </div>
-
         </aside>
 
         <!-- Portrait -->
@@ -41,7 +53,7 @@
 
     </main>
     <!-- Portfolio Content -->
-    <div class="myPortfolio-content">
+    <div class="myPortfolioContent">
 
         <!-- About Me Card -->
         <section class="card">
@@ -54,12 +66,12 @@
                 dignissimos omnis, voluptate reprehenderit? Dolore commodi cupiditate repellat non eaque neque eius,
                 laudantium quam, recusandae blanditiis reiciendis aut unde quasi minima, vel harum alias. Eos
                 blanditiis, maiores reiciendis saepe cum nemo excepturi alias corporis doloremque minus dolore delectus
-                
+
 
         </section>
 
-         <!-- Work Card -->
-         <section class="card">
+        <!-- Work Card -->
+        <section class="card">
             <h2>Work</h2>
             <ul>
                 <li>i did one project</li>
@@ -74,28 +86,13 @@
         </section>
 
 
-         <!-- Resume Card -->
-         <section class="card">
+        <!-- Resume Card -->
+        <section class="card">
             <h2>Resume</h2>
-        <p>this is a formal documentation of my resume with links for your vieing pleasure</p>
-        <p>To view my resume <a>click here!</a>
-        <p>To download my resume <a>click here!</a>
+            <p>this is a formal documentation of my resume with links for your vieing pleasure</p>
+            <p>To view my resume <a>click here!</a>
+            <p>To download my resume <a>click here!</a>
 
-        </section>
-
-
-         <!-- Contact Card -->
-         <section class="card">
-            <h2>Contacts</h2>
-          <ul>
-              <li>Email: TNJ8510@Gmail.COM</li>
-              <li>Phone: (555) 555 - 5555</li>
-              <li>Github: <a href="https://github.com/tnj415"></li>
-              
-              
-          </ul>
-
-        </section>
     </div>
 
 </body>
