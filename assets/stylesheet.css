@@ -119,8 +119,8 @@ aside {
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(0, 0, 0, 90%); /* Black with opacity */
+    background-color: rgb(243, 120, 20, .8); /* Fallback color */
+    background-color: rgba(0, 0, 0, .9); /* Black with opacity */
     
   }
   
@@ -157,7 +157,8 @@ aside {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    
+    margin-right: 20px;
+    padding-top: 19px;
   }
   
   .close:hover,
@@ -169,6 +170,51 @@ aside {
   /****************************************************************/
 
   
+  .work-card {
+    flex: 6;
+    background-color: #fff;
+    padding: 50px;
+    display: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    
+  }
+
+  .work-content {
+    max-width:300px;
+    max-height:300px;
+
+      border-style: solid;
+      border-width: 1px;
+      padding: 10px;
+      flex: 0 0 300px;
+      /* transform: rotate(8deg); */
+      margin: 20px;
+      border-color: rgb(243, 120, 20);
+      /* margin: 20px; */
+       
+  }
+
+  /* .work-content a[comp]{
+      max-width:300px;
+      max-height:300px;
+  } 
+  .work-content p {
+      display: none;
+  }*/
+  
+  .word-content:hover {
+      display: block;
+      color: black;
+      border-color: white;
+    background-color: rgb(243, 120, 20, .8)
+  }
+  .work-content img {
+      width: 100%;
+  }
+
+  /*****************************************************************/
 .underline-text {
     text-decoration: underline;
 }
