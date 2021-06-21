@@ -30,15 +30,13 @@ main {
 .imgBot {
 	height:30px;
     width:30px;
-    margin-top: -20px;
+    
     
 }
 
 .logo .imgTop {
 	height:30px;
     width:30px;
-margin-top: -20px;
-
 	z-index: 99;
     display: none;
     position: absolute;
