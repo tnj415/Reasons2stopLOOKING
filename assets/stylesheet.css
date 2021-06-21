@@ -3,18 +3,22 @@
     color: #ffffff;
     font-family: 'Mate SC', serif;
     font-size: 20px;
+    text-decoration: none;
 }
-      
+
 
 header {
-	position: fixed;
+    padding-top: 5px;
+    position: fixed;
 	width: 100%;
 	top: 0px;
-	padding: 20px;/************/
 	text-align: center;
-    background-color: rosybrown;
+    
 }
 
+.nav {
+    padding-top: 10px;
+}
 main {
 	display: flex;
 	flex-direction: row;
@@ -24,19 +28,21 @@ main {
 .logo {
 	float: left;
     position: relative;
-
+padding: 0px;
 }
 
 .imgBot {
-	height:30px;
-    width:30px;
+	height: 50px;
+    width: 50px;
+    padding: 0pv;
     
     
 }
 
 .logo .imgTop {
-	height:30px;
-    width:30px;
+	height: 50px;
+    width: 50px;
+    padding: 0px;
 	z-index: 99;
     display: none;
     position: absolute;
@@ -93,7 +99,9 @@ aside {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	padding: 50px;}
+	padding: 50px;
+    
+}
 
 
 
@@ -112,26 +120,35 @@ aside {
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(0, 0, 0, 50%); /* Black with opacity */
+    background-color: rgba(0, 0, 0, 90%); /* Black with opacity */
     
   }
   
   /* Modal Content */
   .modal-content {
-    background-color:rgb(62, 64, 65);
+    
     margin: auto;
-    padding: 20px;
+    
     border: 1px solid rgb(243, 120, 20);
-    width: 80%;
+    width: 50%;
   
 
   }
   
   .modal-text {
-    background-color:rgb(62, 64, 65);
+    text-align: left;
     list-style-type: none;
-    text-align: center;
-    
+       
+  }
+
+  .modal-text:hover, a:hover {
+      color:rgb(243, 120, 20);
+  }
+ 
+  #idname::before {
+    content: '📝';
+    display: inline-block;
+    margin-right: 30px;
   }
 
   /* The Close Button */
@@ -140,7 +157,7 @@ aside {
     float: right;
     font-size: 28px;
     font-weight: bold;
-    background-color: rgb(62, 64, 65);
+    
   }
   
   .close:hover,
@@ -150,9 +167,10 @@ aside {
   }
 
   /****************************************************************/
-.card {
-	color: #ffffff;
-	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+  
+.underline-text {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 890px) {
