@@ -268,21 +268,25 @@ aside {
   left: 0;
   right: 0;
   width: 100%;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: vw(100%);
+  max-height: vh(100%);
   opacity: 0;
   transition: .25s linear;
   background-color: #0a2b4ef5;
+  margin: auto;
 }
 
 .work-card-content p {
-  height: 80%;
-  width: 80%;
+  max-width:inherit;
+  flex-shrink: 99;
   background: none;
   text-align: center;
+  font-size: 2vw;
+  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
 }
 
 .work-card-content:hover p {
@@ -291,8 +295,7 @@ aside {
 
 }
 
-.work-card-content:hover .work-card-content-overlay {
-  min-width: 400px;
+.work-card-content:hover .work-card-content-overlay, p .work-card-content-overlay {
   opacity: .85;
 
 }
@@ -336,7 +339,9 @@ aside {
 
   }
 
-  .aside {
+  aside {
+    min-width:unset;
+    margin: 10% 0%;
     display: flex;
     justify-content: center;
   }
@@ -350,6 +355,22 @@ aside {
     margin-right: 0px;
     margin-top: 10%;
   }
+
+  .work-card-content {
+    min-width: unset;
+  }
+
+  /* .work-card-content p {
+    height: 80%;
+    width: 80%;
+    flex-shrink: 99;
+    background: none;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } */
+
 }
 @media screen and (max-width: 950px) {
 
@@ -413,7 +434,7 @@ aside {
   }
 
   #about-me-content {
-    max-height: 900;
+    max-height: unset;
   }
 
 
@@ -443,12 +464,12 @@ aside {
     color: rgb(243, 120, 20);
   }
 
-  .top-section {
+  /* .top-section {
     display:none;
   }
   .asideContent {
     display:none;
-  }
+  } */
 
   .myPortfolioContent {
     align-content: center;
@@ -456,7 +477,6 @@ aside {
 
   .card {
   margin:0px;
-  max-width: 300px;
   }
 
 
@@ -464,9 +484,9 @@ aside {
     display: block;
   }
 
-  #about-me-content {
-    max-height: 1300px;
-  }
+  /* #about-me-content {
+    max-height: unset;
+  } */
 
   .work-card-content {
       border: 2px solid rgb(243, 120, 20);
@@ -474,6 +494,7 @@ aside {
      
 
   }
+
 }
 
   /* .work-card-content-overlay {
