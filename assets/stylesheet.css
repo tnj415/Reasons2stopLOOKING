@@ -8,8 +8,8 @@
 
 }
 
-.logo a {
-  display: hidden;
+#home a {
+display: hidden;
 }
 
 h2 {
@@ -325,7 +325,7 @@ aside {
   .top-section {
     flex-direction: column;
     align-content: space-between;
-    width: 100%;
+ 
     float: center;
   }
 
@@ -338,7 +338,7 @@ aside {
     justify-content: center;
     align-items: center;
     margin-top: 10%;
-    width: 100%;
+    
     padding-left: 0;
     display: flex;
     justify-content: center;
@@ -399,23 +399,37 @@ aside {
 
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 377px) {
 
   .nav {
     display: none;
   }
 
+  .card, .work-card-content, .top-section{
+    margin:0px;
+    max-width: 300px;
+  }
+
+
   .menu-iconC {
     display: block;
   }
+
+  .top-section {
+    display:none;
+  }
+  .asideContent {
+    display:none;
+  }
+
+  /* .myPortfolioContent {
+    margin-top: 50;
+  } */
 
   .menu-iconC:active {
     border: 2px solid rgb(243, 120, 20);
     color: rgb(243, 120, 20);
   }
-
-  .card {
-     }
 
   #about-me-content {
     max-height: 900px;
