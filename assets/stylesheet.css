@@ -1,12 +1,19 @@
 * {
   background-color: #202122;
   color: #ffffff;
-  font-family: 'Mate SC', serif;
+  font-family: 'Noto Serif', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-decoration: none;
+
+}
+
+.logo a {
+  display: hidden;
 }
 
 h2 {
+  padding-top: 50px;
   font-size: 200%;
 }
 
@@ -16,10 +23,13 @@ header {
   width: 100%;
   top: 0px;
   text-align: center;
+  z-index: 5;
+
 
 }
 
 header a {
+
   margin-right: 50;
   text-align: center;
   text-decoration: none;
@@ -36,12 +46,18 @@ header a:hover {
 
 .nav {
   padding-top: 10px;
+
 }
 
 .logo {
   float: left;
   position: relative;
-  padding: 0px;
+
+}
+
+.logo:hover a,
+.logo:hover .imgTop {
+  border: none;
 }
 
 .imgBot {
@@ -67,6 +83,15 @@ header a:hover {
 
 .logo:hover .imgTop {
   display: block;
+}
+
+.menu-iconC {
+  font-size: 150%;
+  display: none;
+  float: right;
+  margin: 0px 20px 0px 0px;
+
+  border: none;
 }
 
 main {
@@ -106,13 +131,27 @@ aside {
 
 
 /***********************************************************************/
+
+#myBtn {
+  border: 2px solid rgb(243, 120, 20);
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+#myBtn:hover {
+  color: rgb(243, 120, 20);
+  background-color: rgba(61, 61, 66, 0.945);
+
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 5;
   /* Sit on top */
   padding-top: 100px;
   /*padding on sides?*/
@@ -155,12 +194,6 @@ aside {
   color: rgb(243, 120, 20);
 }
 
-/* #idname::before {
-  content: '📝';
-  display: inline-block;
-  margin-right: 30px;
-} */
-
 /* The Close Button */
 .close {
   color: #aaaaaa;
@@ -190,7 +223,7 @@ aside {
 .card {
   margin-left: 50px;
   flex: 3;
-
+  padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -256,7 +289,7 @@ aside {
 }
 
 .work-card-content:hover .work-card-content-overlay {
-min-width: 400px;
+  min-width: 400px;
   opacity: .85;
 
 }
@@ -291,6 +324,9 @@ min-width: 400px;
   nav,
   .top-section {
     flex-direction: column;
+    align-content: space-between;
+    width: 100%;
+    float: center;
   }
 
   nav {
@@ -360,5 +396,29 @@ min-width: 400px;
     
   }
 *******************************************/
+
+}
+
+@media screen and (max-width: 675px) {
+
+  .nav {
+    display: none;
+  }
+
+  .menu-iconC {
+    display: block;
+  }
+
+  .menu-iconC:active {
+    border: 2px solid rgb(243, 120, 20);
+    color: rgb(243, 120, 20);
+  }
+
+  .card {
+     }
+
+  #about-me-content {
+    max-height: 900px;
+  }
 
 }
