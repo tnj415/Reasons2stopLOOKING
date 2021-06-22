@@ -108,16 +108,25 @@ aside {
 /***********************************************************************/
 /* The Modal (background) */
 .modal {
-  display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
-  padding-top: 100px;/*padding on sides?*/  
-  left: 0;/* Location of the box */
-  top: 0;/* Location of the box */
-  width: 100%;/* Full width */
-  height: 100%;/* Full height */
-  background-color: rgba(0, 0, 0, .9);/* Black with opacity */
-  
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /*padding on sides?*/
+  left: 0;
+  /* Location of the box */
+  top: 0;
+  /* Location of the box */
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  background-color: rgba(0, 0, 0, .9);
+  /* Black with opacity */
+
 
 }
 
@@ -131,7 +140,7 @@ aside {
 
 }
 
-.modal-content i{
+.modal-content i {
   float: left;
 
 }
@@ -140,7 +149,9 @@ aside {
   list-style-type: none;
 }
 
-.modal-content li:hover, .modal-content a:hover, .modal-content i:hover{
+.modal-content li:hover,
+.modal-content a:hover,
+.modal-content i:hover {
   color: rgb(243, 120, 20);
 }
 
@@ -190,6 +201,7 @@ aside {
 }
 
 .work-card-content {
+  min-width: 400px;
   max-width: 400px;
   max-height: 400px;
 
@@ -209,10 +221,11 @@ aside {
 .work-card-content img {
   display: block;
   width: 100%;
-  
+
 }
 
-.work-card-content-overlay, .work-card-content p{
+.work-card-content-overlay,
+.work-card-content p {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -223,7 +236,7 @@ aside {
   max-height: 400px;
   opacity: 0;
   transition: .25s linear;
-background-color: #0a2b4ef5;
+  background-color: #0a2b4ef5;
 }
 
 .work-card-content p {
@@ -239,12 +252,13 @@ background-color: #0a2b4ef5;
 .work-card-content:hover p {
   background-color: none;
   opacity: 1;
-   
+
 }
-.work-card-content:hover .work-card-content-overlay{
-  
+
+.work-card-content:hover .work-card-content-overlay {
+min-width: 400px;
   opacity: .85;
-  
+
 }
 
 
@@ -318,6 +332,7 @@ background-color: #0a2b4ef5;
     border: 2px solid white;
     text-align: center;
   }
+
   .myPortfolioContent h2:hover {
     border-color: rgb(243, 120, 20);
     color: rgb(243, 120, 20);
@@ -332,7 +347,8 @@ background-color: #0a2b4ef5;
     box-shadow: white;
   }
 
-/*******************************************
+
+  /*******************************************
   .myPortfolioContent #work-content {
     display: none;
    transition: ease-in;
