@@ -55,6 +55,10 @@ header a:hover {
 
 }
 
+.logo a {
+  padding: 0;
+}
+
 .logo:hover a,
 .logo:hover .imgTop {
   border: none;
@@ -278,11 +282,10 @@ aside {
 
 .work-card-content p {
   max-width:inherit;
-  flex-shrink: 99;
+  /* flex-shrink: 99; */
   background: none;
   text-align: center;
   font-size: 2vw;
-  
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
