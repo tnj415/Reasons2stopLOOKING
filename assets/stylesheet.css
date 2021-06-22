@@ -374,6 +374,7 @@ aside {
     color: rgb(243, 120, 20);
   }
 
+
   .card h2 {
     text-align: center;
     padding: 15px;
@@ -381,6 +382,10 @@ aside {
     border-width: 2px;
     border-radius: 20px;
     box-shadow: white;
+  }
+
+  #about-me-content {
+    max-height: 900;
   }
 
 
@@ -405,14 +410,9 @@ aside {
     display: none;
   }
 
-  .card, .work-card-content, .top-section{
-    margin:0px;
-    max-width: 300px;
-  }
-
-
-  .menu-iconC {
-    display: block;
+  .menu-iconC:active {
+    border: 2px solid rgb(243, 120, 20);
+    color: rgb(243, 120, 20);
   }
 
   .top-section {
@@ -422,17 +422,32 @@ aside {
     display:none;
   }
 
+  .card {
+    margin:5px;
+    max-width: 300px;
+  }
+
+
+  .menu-iconC {
+    display: block;
+  }
+
+  #about-me-content {
+    max-height: 1300px;
+  }
+
+  .work-card-content {
+    border: none;
+  }
+.work-card-content, .work-card-content img, .work-card-content-overlay, .work-card-content-overlay p {
+  max-width: 365px;
+  max-height: 250px;
+  border: 2px solid rgb(243, 120, 20);
+}
+
   /* .myPortfolioContent {
     margin-top: 50;
   } */
 
-  .menu-iconC:active {
-    border: 2px solid rgb(243, 120, 20);
-    color: rgb(243, 120, 20);
-  }
-
-  #about-me-content {
-    max-height: 900px;
-  }
 
 }
