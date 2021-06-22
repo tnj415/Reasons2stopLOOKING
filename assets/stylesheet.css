@@ -108,25 +108,16 @@ aside {
 /***********************************************************************/
 /* The Modal (background) */
 .modal {
-  display: none;
-  /* Hidden by default */
-  position: fixed;
-  /* Stay in place */
-  z-index: 1;
-  /* Sit on top???????? */
-  padding-top: 100px;
-  /* Location of the box */
-  /*padding on sides?*/
-  left: 0;
-  top: 0;
-  width: 100%;
-  /* Full width */
-  height: 100%;
-  /* Full height */
-  background-color: rgb(243, 120, 20, .8);
-  /* Fallback color */
-  background-color: rgba(0, 0, 0, .9);
-  /* Black with opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px;/*padding on sides?*/  
+  left: 0;/* Location of the box */
+  top: 0;/* Location of the box */
+  width: 100%;/* Full width */
+  height: 100%;/* Full height */
+  background-color: rgba(0, 0, 0, .9);/* Black with opacity */
+  
 
 }
 
@@ -140,22 +131,24 @@ aside {
 
 }
 
-.modal-text {
-  text-align: left;
-  list-style-type: none;
+.modal-content i{
+  float: left;
 
 }
 
-.modal-text:hover,
-a:hover {
+.modal-content li {
+  list-style-type: none;
+}
+
+.modal-content li:hover, .modal-content a:hover, .modal-content i:hover{
   color: rgb(243, 120, 20);
 }
 
-#idname::before {
+/* #idname::before {
   content: '📝';
   display: inline-block;
   margin-right: 30px;
-}
+} */
 
 /* The Close Button */
 .close {
@@ -201,7 +194,7 @@ a:hover {
   max-height: 400px;
 
   position: relative;
-  top: 0;
+  width: 50%;
   border-style: solid;
   border-width: 1px;
 
@@ -213,27 +206,44 @@ a:hover {
 
 }
 
-.work-card-content p {
-  display: none;
-}
-
 .work-card-content img {
   display: block;
   width: 100%;
-  height: auto;
+  
 }
 
-
-.work-card-content:hover p {
-  display:block;
+.work-card-content-overlay, .work-card-content p{
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  opacity: 0;
+  transition: .25s linear;
+background-color: #0a2b4ef5;
+}
+
+.work-card-content p {
+  height: 80%;
+  width: 80%;
+  background: none;
+  text-align: center;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
-  color: white;
-  background-color: rgba(0, 0, 0, .9);
-  background-size: 30%;
+}
+
+.work-card-content:hover p {
+  background-color: none;
+  opacity: 1;
+   
+}
+.work-card-content:hover .work-card-content-overlay{
+  
+  opacity: .85;
   
 }
 
