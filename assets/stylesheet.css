@@ -5,22 +5,26 @@
   /* font-family: 'Roboto', sans-serif; */
   font-size: 20px;
   text-decoration: none;
-  
-
 }
+
+/* Center a-tags. */
 a {
   color: white;
 }
+
+/* Hide a-tag under a picture to create a home button. */
 #home a {
-display: hidden;
-margin-left: -500px;
+  display: hidden;
 }
 
+/* Increase header size. */
 h2 {
-  padding-top: 50px;
   font-size: 200%;
 }
 
+/* create a navigation bar that doesnt move when scrolling.
+stylistic changes and positioning.
+stays above other content on the page with z index. */
 header {
   padding-top: 5px;
   position: fixed;
@@ -32,13 +36,15 @@ header {
 
 }
 
+/* center-align links in navigation bar.
+stylistic changes. */
 nav a {
-
   text-align: center;
   text-decoration: none;
   padding: 20px;
 }
 
+/* changes color of a tags in nav bar when hovered.*/
 header a:hover {
   color: rgb(243, 120, 20);
   text-decoration: none;
@@ -46,79 +52,92 @@ header a:hover {
   border-bottom: 2px solid currentColor;
 }
 
+/* stylistic changes to nav bar.*/
 .nav {
   padding-top: 10px;
 
 }
 
+/* position container for home button.
+relative position to child.*/
 .logo {
   float: left;
   position: relative;
 
 }
 
+/* minimize size of a tag in logo container.*/
 .logo a {
   padding: 0;
 }
 
+/* 
 .logo:hover a {
-/* .logo:hover .imgTop { */
+  /* .logo:hover .imgTop {
   border: none;
-}
+} */
 
+/* resize white logo.*/
 .imgBot {
   height: 50px;
   width: 50px;
-  padding: 0pv;
-
-
 }
 
+/* resize orange logo.
+high z index so it appears on top when visible.
+make button not visible with 'display: none'.
+give absolute position to overlay logo.
+give positioning*/
 .logo .imgTop {
   height: 50px;
   width: 50px;
   padding: 0px;
-  z-index: 99;
+  z-index: 10;
   display: none;
   position: absolute;
-
   top: 0;
   left: 0;
-
 }
 
+/* display orange logo when hovered
+(because of z index it gives cool appearance) */
 .logo:hover .imgTop {
   display: block;
 }
 
+/* not implemented in javascript, but a place i would put a menu button.
+i take away fixed nav bar in small browsers so i would replace nav bar with this button */
+/* stylistic adjustments */
 .menu-iconC {
   font-size: 150%;
   display: none;
   float: right;
   margin: 0px 20px 0px 0px;
-
   border: none;
 }
 
+/* center main and column direction */
 main {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
 }
 
+/* normal direction and set child containers towards side of browser */
 .top-section {
   display: flex;
   justify-content: space-between;
 
 }
 
+/* stylistic positioning of my picture that adjusts when dynamically resized on a large browser*/
 .portrait {
   float: right;
   margin-right: 25%;
   margin-top: 20%;
 }
 
-
+/* stylistic positioning of my name stuff that adjusts when window is dynamically resized on a large browser. */
 aside {
   text-align: center;
   flex-shrink: 2;
@@ -128,11 +147,12 @@ aside {
   line-height: 150%;
 }
 
+/* cool line */
 .asideContent {
-  
   border-left: 2px solid white;
 }
 
+/* position content */
 .singleLine {
   text-align: center;
   font-size: 200%;
@@ -141,6 +161,7 @@ aside {
 
 /***********************************************************************/
 
+/* style button */
 #myBtn {
   border: 2px solid rgb(243, 120, 20);
   display: inline-block;
@@ -148,37 +169,38 @@ aside {
   border-radius: 50px;
 }
 
+/* adjust style when hovered */
 #myBtn:hover {
   color: rgb(243, 120, 20);
   background-color: rgba(61, 61, 66, 0.945);
 
 }
 
-/* The Modal (background) */
+/* the modal (background) */
 .modal {
   display: none;
-  /* Hidden by default */
+  /* hidden by default */
   position: fixed;
-  /* Stay in place */
+  /* stay in place */
   z-index: 5;
-  /* Sit on top */
+  /* sit on top */
   padding-top: 100px;
-  /*padding on sides?*/
+  /* padding on all sides*/
   left: 0;
-  /* Location of the box */
+  /* location of the box */
   top: 0;
-  /* Location of the box */
+  /* location of the box */
   width: 100%;
-  /* Full width */
+  /* full width */
   height: 100%;
-  /* Full height */
+  /* full height */
   background-color: rgba(0, 0, 0, .9);
-  /* Black with opacity */
+  /* black with opacity */
 
 
 }
 
-/* Modal Content */
+/* style modal */
 .modal-content {
 
   margin: auto;
@@ -187,24 +209,30 @@ aside {
   height: 50%;
 
 }
+
+/* align a tags */
 .modal-content a {
   align-content: center;
 }
+
+/* align icons */
 .modal-content i {
   float: left;
 }
 
+/* no bullet points */
 .modal-content li {
   list-style-type: none;
 }
 
+/* everything changes to orange when hovered */
 .modal-content li:hover,
 .modal-content a:hover,
 .modal-content i:hover {
   color: rgb(243, 120, 20);
 }
 
-/* The Close Button */
+/* style close button */
 .close {
   color: #aaaaaa;
   float: right;
@@ -214,6 +242,7 @@ aside {
   padding-top: 20px;
 }
 
+/* style close button when hovered */
 .close:hover,
 .close:focus {
   cursor: pointer;
@@ -222,6 +251,8 @@ aside {
 
 /****************************************************************/
 
+/* "Meat of website"
+controlling the flow and spacing of upcoming containers */
 .myPortfolioContent {
   display: flex;
   flex-direction: column;
@@ -230,125 +261,107 @@ aside {
 
 }
 
+/* each thing (3) is going to be in a "card" */
 .card {
-  
   flex: 3;
   padding-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
-
-  /* position:relative; */
-
 }
 
+/* stylistic positioning */
 .showcase-link {
   text-align: center;
 }
 
-.showcase-link a{
-  color:rgb(255, 175, 3);
-}
-
-.showcase-link:hover a {
-  color: rgb(20, 100, 53);
-}
+/* container for headlined work experience */
 .showcase {
-  /* display:flex; */
-width: 100%;
-height: 100%;
-
-/* min-width: 400px;
-max-width: 400px;
-max-height: 400px; */
-flex-shrink: 2;
-position: relative;
-/* width: 50%; */
-
-/* margin: 20px; */
-
+  /* display size */
+  width: 100%;
+  height: 100%;
+/* resize property */
+  flex-shrink: 2;
+  /* relative positioning to child */
+  position: relative;
 
 }
 
+/* image of work
+stylistic changes */
 .showcase img {
   display: block;
-  /* max-height: 76.5vh; */
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   border: 15px solid rgb(255, 175, 3);
 }
 
-  .sc-overlay p, .sc-overlay{
-    position: absolute;
-    text-align: center;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    font-size: 3vw;
-max-height: 100vh;
-    opacity: 0;
-    transition: .25s linear;
-    background-color: #0a2b4ef5;
-    margin: auto;
+/* text and overlay */
+.sc-overlay p,
+.sc-overlay {
+  /* positioning */
+  position: absolute;
+  text-align: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  /* dynamic font and overlay size */
+  font-size: 3vw;
+  max-height: 100vh;
+  /* hidden */
+  opacity: 0;
+  /* speed of appearance */
+  transition: .25s linear;
+  background-color: #0a2b4ef5;
+  margin: auto;
 
 }
 
+/* position text */
 .sc-overlay p {
   bottom: auto;
 }
 
-
-/* .showcase p {
-  max-width:inherit;
-  /* flex-shrink: 99;
-  background: none;
-  text-align: center;
-  font-size: 2vw;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
+/* show text when hovered */
 .showcase:hover p {
   background-color: none;
   opacity: 1;
 
 }
 
-.showcase:hover .sc-overlay, p .sc-overlay {
+/* show overlay when hovered
+gave overlay opacity */
+.showcase:hover .sc-overlay,
+p .sc-overlay {
   opacity: .85;
 
 }
 
+/* containers for work
+stylistic changes*/
 .work-card-content {
   min-width: 400px;
   max-width: 400px;
   max-height: 400px;
-
   position: relative;
   width: 50%;
   border-style: solid;
   border-width: 1px;
-
-  /* flex: 0, 100, 500px; */
-  /* transform: rotate(8deg); */
   margin: 20px;
   border: 2px solid rgb(243, 120, 20);
-  /* margin: 20px; */
-
 }
 
+/* image adjustments */
 .work-card-content img {
   display: block;
   width: 100%;
 
 }
 
-
+/* overlay and text for each container */
 .work-card-content-overlay,
 .work-card-content p {
   position: absolute;
@@ -357,93 +370,63 @@ max-height: 100vh;
   bottom: 0;
   left: 0;
   right: 0;
-
+/* dynamic resize */
   font-size: 2vh;
-
-  /* width: 100%;
-  max-width: 100vw;
-  max-height: 100vh; */
+/* hidden */
   opacity: 0;
   transition: .25s linear;
   background-color: #0a2b4ef5;
   margin-bottom: auto;
 }
 
-/* .work-card-content p {
-  max-width:inherit;
-  /* flex-shrink: 99;
-  background: none;
-  text-align: center;
-  font-size: 2vw;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-
-} */
-
+/* show when hovered */
 .work-card-content:hover p {
   background-color: none;
   opacity: 1;
 
 }
 
-.work-card-content:hover .work-card-content-overlay, p .work-card-content-overlay {
+/* show when hovered */
+.work-card-content:hover .work-card-content-overlay,
+p .work-card-content-overlay {
   opacity: .85;
 
 }
 
+footer p {
+  text-align: center;
+}
 
-
-
-/* .work-content a[comp]{
-      max-width:300px;
-      max-height:300px;
-  } 
-  .work-content p {
-      display: none;
-  }
-  
-  .word-content:hover {
-      display: block;
-      color: black;
-      border-color: white;
-    background-color: rgb(243, 120, 20, .8)
-  }*/
-
-  footer p {
-    text-align: center;
-  }
-
-/*****************************************************************/
+/* small singular edit i added */
 .underline-text {
   text-decoration: underline;
 }
 
+/*****************************************************************/
+
+/* stylistic changes for different size browser */
 @media screen and (max-width: 1010px) {
 
-  /* min-width: 500px;
-  margin-left: 10%;
-  margin-top: 20%;
-  line-height: 150%; */
-
-  body, main,
-  .top-section {
+  body, main, .top-section {
     display: flex;
     justify-content: center;
     flex-direction: column;
-
   }
 
+  /* stylistic changes to my name part */
   aside {
-    min-width:unset;
+    min-width: unset;
     margin: 10% 0%;
     display: flex;
     justify-content: center;
   }
+
+  /* take away cool line */
   .asideContent {
     border-left: none;
   }
 
+  /* stylistic changes to picture */
   .portrait {
     display: flex;
     justify-content: center;
@@ -455,27 +438,13 @@ max-height: 100vh;
     min-width: unset;
   }
 
-  /* .work-card-content p {
-    height: 80%;
-    width: 80%;
-    flex-shrink: 99;
-    background: none;
-    text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  } */
-
 }
+
+/* stylistic changes for different size browser */
 @media screen and (max-width: 950px) {
 
-  main,
-  nav,
-  main .top-section {
-    /* flex-direction: column; */
+  main, nav, main .top-section {
     align-content: center;
- 
-    /* float: center; */
   }
 
   nav {
@@ -483,30 +452,9 @@ max-height: 100vh;
   }
 
   .top-section {
-    /* display: flex; */
     justify-content: center;
-    
-    /* margin-top: 10%; */
-    
     padding-left: 0;
-  
   }
-
-
-  /* .card {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-	}
-	.card h2 {
-		width: fit-content;
-	}
-
-	.card p,
-	.card a,
-	.card ul,.work-content {
-		display: none;
-	} */
 
   .myPortfolioContent h2 {
     border: 2px solid white;
@@ -532,81 +480,36 @@ max-height: 100vh;
     max-height: unset;
   }
 
-
-  /*******************************************
-  .myPortfolioContent #work-content {
-    display: none;
-   transition: ease-in;
-  }
-
-  #work-title:hover+#work-content {
-    display: block;
-  
-    
-  }
-*******************************************/
-
 }
 
-@media  screen and (max-width: 750) {
+/* stylistic changes for different size browser */
+@media screen and (max-width: 600px) {
 
-
-  
-}
-@media screen and (max-width: 600px) { /*377*/
-
+  /* take away nav bar */
   .nav {
     display: none;
   }
 
+  /* styled the menu button (inactive but responsive) */
   .menu-iconC:active {
     border: 2px solid rgb(243, 120, 20);
     color: rgb(243, 120, 20);
   }
-
-  /* .top-section {
-    display:none;
-  }
-  .asideContent {
-    display:none;
-  } */
 
   .myPortfolioContent {
     align-content: center;
   }
 
   .card {
-  margin:0px;
+    margin: 0px;
   }
-
 
   .menu-iconC {
     display: block;
   }
 
-  /* #about-me-content {
-    max-height: unset;
-  } */
-
   .work-card-content {
-      border: 2px solid rgb(243, 120, 20);
+    border: 2px solid rgb(243, 120, 20);
     margin: 5px;
-     
-
   }
-
 }
-
-  /* .work-card-content-overlay {
-    max-width: 300;
-  }
-   */
-/* .work-card-content, .work-card-content img, .work-card-content-overlay, .work-card-content-overlay p {
-  max-width: 365px;
-  max-height: 250px;
-  /* border: 2px solid rgb(243, 120, 20);
-}
-
-  /* .myPortfolioContent {
-    margin-top: 50;
-  } */
