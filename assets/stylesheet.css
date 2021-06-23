@@ -185,10 +185,11 @@ aside {
   height: 50%;
 
 }
-
+.modal-content a {
+  align-content: center;
+}
 .modal-content i {
   float: left;
-
 }
 
 .modal-content li {
