@@ -408,6 +408,9 @@ max-height: 100vh;
     background-color: rgb(243, 120, 20, .8)
   }*/
 
+  footer p {
+    text-align: center;
+  }
 
 /*****************************************************************/
 .underline-text {
