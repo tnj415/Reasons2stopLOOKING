@@ -1,5 +1,5 @@
 * {
-  background-color: #536e88;
+  background-color: #202122;
   color: #ffffff;
   font-family: 'Noto Serif', serif;
   /* font-family: 'Roboto', sans-serif; */
@@ -61,8 +61,8 @@ header a:hover {
   padding: 0;
 }
 
-.logo:hover a,
-.logo:hover .imgTop {
+.logo:hover a {
+/* .logo:hover .imgTop { */
   border: none;
 }
 
