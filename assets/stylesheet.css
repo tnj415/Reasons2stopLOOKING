@@ -244,12 +244,12 @@ aside {
   text-align: center;
 }
 
-.showcase-link {
-  color:rgb(255, 175, 3)
+.showcase-link a{
+  color:rgb(255, 175, 3);
 }
 
-.showcase-link a:hover {
-  box-shadow: seashell;
+.showcase-link:hover a {
+  color: rgb(20, 100, 53);
 }
 .showcase {
   /* display:flex; */
