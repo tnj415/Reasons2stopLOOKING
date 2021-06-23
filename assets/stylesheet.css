@@ -8,7 +8,9 @@
   
 
 }
-
+a {
+  color: white;
+}
 #home a {
 display: hidden;
 margin-left: -500px;

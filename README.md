@@ -13,7 +13,7 @@
 
 ## General Info
 * This is a collection of information that displays my ability styled together to convince viewers i am the best hire.
-* ![Image text](/assets/images/Screen-Shot-of-Website.PNG)
+* ![Image text](/assets/ima/ss-of-site.PNG)
 
 ## Technologies
 * This website was created with HTML, CSS, and Javascript code on Microsoft Visual Studio Code.
